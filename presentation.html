@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Presentation demo</title>
+
+		<meta name="description" content="My first HTML Presentation using reaveal.js">
+		<meta name="author" content="Geert Berkers">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="lib/css/reveal.css">
+		<link rel="stylesheet" href="lib/css/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/coloredcode.css">
+	</head>
+	<body>
+		<!-- Shortcuts: -->
+		<!-- Alt click: 	Zoom -->
+		<!-- B or .: 		Pause -->
+		<!-- ESC: 			Overview -->
+		<!-- S: 			Speaker view -->
+		<div class="reveal">					
+			<!-- All slides -->
+			<div class="slides">
+			
+				<!-- Index -->
+				<section id="intro">
+					<h1>HTML Presentation</h1>
+					<h3>First demo using reveal.js</h3>
+					<p>
+						<small>Created by Geert Berkers | <a href="https://www.linkedin.com/in/geert-berkers-3370b5b5" target="_blank">LinkedIn</a> | <a href="https://github.com/geertberkers" target="_blank">Github</a></small>
+					</p>
+					
+					<!-- Notitions in your presentation -->
+					<aside class="notes">
+						Save all extra information in here. You only see this when you pressed S.
+					</aside>
+				</section>
+
+				<!-- Index -->
+				<section id="index">
+					<h2>Index</h2>
+					<ul>
+						<li class="fragment grow">Vertical slides</li>
+						<li class="fragment grow">Background</li>
+						<li class="fragment grow">Code</li>
+						<li class="fragment grow">Links</li>
+						<li class="fragment grow">End</li>
+					</ul>
+				</section>
+				
+				<!-- Vertical slides -->
+				<section>
+					<section id="verticalslides">
+						<h2>Vertical Slides</h2>
+						<p>Slides can be nested inside of each other.</p>
+					</section>
+					<section id="first">
+						<h2>First vertical slide</h2>
+						<p>These "nested" slides are usefull for adding additional information underneath a horizontal slide.</p>
+					</section>
+					<section id="second">
+						<h2>Second vertical slide</h2>
+						<p>Fine, you know how it works now.</p>
+					</section>
+				</section>
+
+				<!-- Background -->
+				<section>
+					<section id="background" data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>Set <code>data-background="#dddddd"</code> on a slide to change the background color.</p>
+					</section>
+					
+					<section id="background-image" data-background="images/image.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>					
+				</section>
+
+				<!-- Code -->
+				<section id="code">
+					<h2>Show Code</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+public void startDemo(){
+    for(int i = 0; i < 3; i++){
+        System.out.println( i + ": Hello World");
+    }
+}
+					</code></pre>
+				</section>
+
+				<!-- Links -->
+				<section id="linkslides">
+					<h2>Link slides</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/code">like this</a>.
+					</p>
+				</section>			
+
+				<!-- End -->
+				<section id="end" style="text-align: left;">
+					<h1>THE END</h1>
+					<p>Any questions?</p>
+				</section>
+				
+			</div>
+		</div>
+
+		<script type="text/javascript" src="lib/js/head.min.js"></script>
+		<script type="text/javascript" src="lib/js/reveal.js"></script>
+		<script type="text/javascript" src="lib/js/settings.js"></script>
+	
+	</body>
+</html>
